@@ -424,7 +424,7 @@ header h2 {
     padding-left: 14px;
     border: 1px #e5e8ee solid;
     border-radius: 4px;
-    color: #e5e8ee;
+    color: #b5bcc9;
     outline: none;
 }
 
@@ -679,6 +679,15 @@ header h2 {
     background: rgba(0, 0, 0, .3);
     opacity: 0;
     cursor: pointer;
+}
+
+.mask span {
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   line-height: 50px;
+   border-radius: 50%;
+   background: rgba(255, 255, 255, .3);
 }
 
 .divider {
