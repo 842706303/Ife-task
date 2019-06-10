@@ -1,15 +1,12 @@
-var log = function () {
-    console.log.apply('console', arguments);
-}
-
-var windowsHeight = window.innerHeight;
-var headerHeight = $('header').outerHeight();
-var searchHeight = $('.search').outerHeight();
-var chatsHeight = windowsHeight - headerHeight - searchHeight;
+// 设置 chats-list 高度
+var windowsHeight = window.innerHeight,
+    headerHeight = $('header').outerHeight(),
+    searchHeight = $('.search').outerHeight(),
+    chatsHeight = windowsHeight - headerHeight - searchHeight;
 $('.chats-list').css('height', chatsHeight);
 $('.chat-content').css('height', chatsHeight);
 
-
+// 用户
 var action = true;
 $('.drop-down').on('click', function () {
     if (action === true) {
@@ -21,18 +18,18 @@ $('.drop-down').on('click', function () {
     }
 })
 
-
-function active(elemt) {
-    var a = $(elemt)
-    $(a).on('click', function(){
-        $(a).removeClass('active')
-        $(this).addClass('active')
+// 激活
+function active(elem) {
+    var a = $(elem);
+    $(a).on('click', function () {
+        $(a).removeClass('active');
+        $(this).addClass('active');
     })
 }
 
-var b = $('.items li')
-var c = $('.part li')
-var d = $('.chats-list li')
-active(b)
-active(c)
-active(d)
+var b = $('.items li');
+var c = $('.part li');
+var d = $('.chats-list li');
+active(b);
+active(c);
+active(d);
