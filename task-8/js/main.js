@@ -27,9 +27,9 @@ function active(elem) {
     })
 }
 
-var b = $('.items li');
-var c = $('.part li');
-var d = $('.chats-list li');
+var b = $('.items li'),
+    c = $('.part li'),
+    d = $('.chats-list li');
 active(b);
 active(c);
 active(d);
